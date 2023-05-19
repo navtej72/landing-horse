@@ -1,0 +1,647 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35vh;
+
+}
+
+section{
+    
+    width: 100%;
+    background-color: rgb(255, 215, 104);
+}
+
+/* first div */
+
+.item1{
+
+    width: 50%;
+    height: 100%;
+   
+}
+
+.svghorse{
+    position: absolute;
+     bottom: 8%;
+   left: 50px;
+}
+
+.horse{
+    max-width: 350px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));;
+}
+
+/* second div */
+
+.item2{
+    
+    width: 100%;
+    height: 100%;
+}
+
+.svg{
+   
+    margin: auto;
+    max-width: 300px;
+    position: relative;
+    top: 10%;
+    left: 0%;
+}
+
+/* third div */
+
+.item3{
+   
+    width: 50%;
+    height: 100%;
+}
+
+.svghorsetwo{
+    position: absolute;
+    bottom: 8%;
+   right: 50px;
+}
+
+.horsetwo{
+ 
+    max-width: 350px;
+    transform: rotateY(160deg);
+    filter: drop-shadow(-5px -5px 14px rgba(0, 0, 0, 0.5));;
+}
+
+
+
+div .item2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+div .item2 h1{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    font-size: 50px;
+    /* shifts or translate the center point (X, Y) by (X - 50% of outerWidth, Y - 50% of outerHeight) */
+    transform: translate(-50%, -50%);
+}
+
+.navbar{
+    display: flex;
+    max-width: 100%;
+    
+}
+
+.brand{
+    flex-grow: 1;
+}
+
+.brand h2{
+    position: relative;
+    left: 30px;
+   top: 10px;
+    font-size: 40px;
+    color: rgba(0, 0, 0, .5);
+    margin: 0;
+}
+
+.actions{
+   justify-self: end;
+   font-size: 10px;
+    margin-top: 29px;
+    margin-right: 20px;
+}
+
+.actions1, .actions2, .actions3{
+    display: inline-block;
+    margin: 0 5px;
+
+    
+}
+
+#grass{
+    width: 100%;
+    height: 5%;
+}
+
+
+
+.btn-group{
+    position: relative;
+    margin: auto; 
+    height: 100px;
+    width: 500px;
+}
+
+.btn-group button {
+background-color: #04AA6D; /* Green background */
+border: 1px solid green; /* Green border */
+color: white; /* White text */
+padding: 10px 15px; /* Some padding */
+margin: 10px;
+border-radius: 5px;
+cursor: pointer; /* Pointer/hand icon */
+float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+content: "";
+clear: both;
+display: table;
+}
+
+.btn-group button:not(:last-child) {
+border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+background-color: #003528;
+}
+.buttongrp{
+    width: 300px;
+    
+    margin: auto 125px;
+}
+
+button{
+    margin-left:auto;
+}
+
+.btn-group p {
+    font-size: 25px;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    bottom: 10px;
+
+
+}
+
+
+@media screen and (max-width:1280px) {
+
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 25vh;
+    
+    }
+
+    /* name */
+    div .item2{
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    div .item2 h1{
+        position: relative;
+        top: 20%;
+        left: 50%;
+        font-size: 40px;
+        /* shifts or translate the center point (X, Y) by (X - 50% of outerWidth, Y - 50% of outerHeight) */
+        transform: translate(-50%, -50%);
+    }
+
+    
+    /* horseone */
+    .svghorse{
+        position: absolute;
+        top:33%;
+        left: 50px;
+    }
+    
+    .horse{
+        max-width: 300px;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));;
+    }
+    
+    /* horsetwo */
+
+    .svghorsetwo{
+        position: absolute;
+        top:33%;
+        right: 50px;
+    }
+    
+    .horsetwo{
+     
+        max-width: 300px;
+        transform: rotateY(160deg);
+        filter: drop-shadow(-5px -5px 14px rgba(0, 0, 0, 0.5));;
+    }
+
+    .btn-group{
+        position: relative;
+        margin: auto; 
+        height: 100px;
+        width: 500px;
+    }
+    
+    .btn-group button {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 8px 14px 5px 14px; /* Some padding */
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    }
+    
+    
+    .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+    }
+    
+    /* Add a background color on hover */
+    .btn-group button:hover {
+    background-color: #003528;
+    }
+
+    .buttongrp{
+        width: 300px;
+        margin: 30px 139px;
+    }
+    
+    button{
+        margin-left:auto;
+    }
+    
+    .btn-group p {
+        font-size: 20px;
+        width: 100%;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        bottom: 19px;
+    
+    
+    }
+
+}
+@media screen and (max-width:1024px) {
+
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 15vh;
+    
+    }
+
+    section{
+        max-height: 500PX;
+        width: 100%;
+        background-color: rgb(255, 215, 104);
+    }
+
+    /* name */
+    div .item2{
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    div .item2 h1{
+        position: relative;
+        top: 20%;
+        left: 50%;
+        font-size: 30px;
+        /* shifts or translate the center point (X, Y) by (X - 50% of outerWidth, Y - 50% of outerHeight) */
+        transform: translate(-50%, -50%);
+    }
+
+    .svg{
+   
+        margin: auto;
+        max-width: 200px;
+        position: relative;
+        top: 5%;
+        left: 0%;
+    }
+
+    
+    /* horseone */
+    .svghorse{
+        position: absolute;
+        top:40%;
+        left: 70px;
+    }
+    
+    .horse{
+        max-width: 220px;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));;
+    }
+    
+    /* horsetwo */
+
+    .svghorsetwo{
+        position: absolute;
+        top:40%;
+        right: 70px;
+    }
+    
+    .horsetwo{
+     
+        max-width: 220px;
+        transform: rotateY(160deg);
+        filter: drop-shadow(-5px -5px 14px rgba(0, 0, 0, 0.5));;
+    }
+
+    .btn-group{
+        position: relative;
+        margin: auto; 
+        top: 0px;
+        height: 100px;
+        width: 500px;
+    }
+    
+    .btn-group button {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 8px 10px 7px 10px; /* Some padding */
+    border-radius: 5px;
+    margin: auto 15px;
+    font-size: 10px;
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    }
+    
+    
+    .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+    }
+    
+    /* Add a background color on hover */
+    .btn-group button:hover {
+    background-color: #003528;
+    }
+
+    .buttongrp{
+        width: 300px;
+        margin: 50px 150px;
+    }
+    
+    button{
+        margin-left:auto;
+    }
+    
+    .btn-group p {
+        font-size: 15px;
+        width: 100%;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        bottom: 10px;
+    
+    }
+
+}
+@media screen and (max-width:912px) {
+
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 15vh;
+    
+    }
+
+    section{
+       
+        width: 100%;
+        background-color: rgb(255, 215, 104);
+    }
+
+    /* name */
+    div .item2{
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    div .item2 h1{
+        position: relative;
+        top: 20%;
+        left: 50%;
+        font-size: 25px;
+        /* shifts or translate the center point (X, Y) by (X - 50% of outerWidth, Y - 50% of outerHeight) */
+        transform: translate(-50%, -50%);
+    }
+
+    .svg{
+   
+        margin: auto;
+        max-width: 200px;
+        position: relative;
+        top: 5%;
+        left: 0%;
+    }
+
+    
+    /* horseone */
+    .svghorse{
+        position: absolute;
+        top:25%;
+        left: 70px;
+    }
+    
+    .horse{
+        max-width: 200px;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));;
+    }
+    
+    /* horsetwo */
+
+    .svghorsetwo{
+        position: absolute;
+        top:25%;
+        right: 70px;
+    }
+    
+    .horsetwo{
+     
+        max-width: 200px;
+        transform: rotateY(160deg);
+        filter: drop-shadow(-5px -5px 14px rgba(0, 0, 0, 0.5));;
+    }
+
+    .btn-group{
+        position: relative;
+        margin: auto; 
+        bottom: 0px;
+        height: 100px;
+        width: 500px;
+    }
+    
+    .btn-group button {
+    background-color: #00370f; /* Green background */
+    border: 1px solid rgb(1, 56, 1); /* Green border */
+    color: white; /* White text */
+    padding: 8px 10px 7px 10px; /* Some padding */
+    border-radius: 5px;
+    margin: auto 15px;
+    font-size: 10px;
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    }
+    
+    
+    .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+    }
+    
+    /* Add a background color on hover */
+    .btn-group button:hover {
+    background-color: #003528;
+    }
+
+    .buttongrp{
+        width: 300px;
+        margin: 0px 150px;
+    }
+    
+    button{
+        margin-left:auto;
+    }
+    
+    .btn-group p {
+        font-size: 15px;
+        width: 100%;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        bottom: 30px;
+    
+    }
+
+}
+@media screen and (max-width:768px) {
+
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+    
+    }
+
+    section{
+       
+        width: 100%;
+        background-color: rgb(255, 215, 104);
+    }
+
+    /* name */
+    div .item2{
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    div .item2 h1{
+        position: relative;
+        top: 20%;
+        left: 50%;
+        font-size: 25px;
+        /* shifts or translate the center point (X, Y) by (X - 50% of outerWidth, Y - 50% of outerHeight) */
+        transform: translate(-50%, -50%);
+    }
+
+    .svg{
+   
+        margin: auto;
+        max-width: 200px;
+        position: relative;
+        top: 5%;
+        left: 0%;
+    }
+
+    
+    /* horseone */
+    .svghorse{
+        position: absolute;
+        top:30%;
+        left: 70px;
+    }
+    
+    .horse{
+        max-width: 180px;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));;
+    }
+    
+    /* horsetwo */
+
+    .svghorsetwo{
+        position: absolute;
+        top:30%;
+        right: 70px;
+    }
+    
+    .horsetwo{
+     
+        max-width: 180px;
+        transform: rotateY(160deg);
+        filter: drop-shadow(-5px -5px 14px rgba(0, 0, 0, 0.5));;
+    }
+
+    .btn-group{
+        position: relative;
+        margin: auto; 
+        top: 50px;
+        height: 100px;
+        width: 500px;
+    }
+    
+    .btn-group button {
+    background-color: #00370f; /* Green background */
+    border: 1px solid rgb(1, 56, 1); /* Green border */
+    color: white; /* White text */
+    padding: 8px 10px 7px 10px; /* Some padding */
+    border-radius: 5px;
+    margin: auto 15px;
+    font-size: 10px;
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    }
+    
+    
+    .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+    }
+    
+    /* Add a background color on hover */
+    .btn-group button:hover {
+    background-color: #003528;
+    }
+
+    .buttongrp{
+        width: 250px;
+        margin: 20px 155px;
+    }
+    
+    button{
+        margin-left:auto;
+    }
+    
+    .btn-group p {
+        font-size: 12px;
+        width: 100%;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        bottom: 40px;
+    
+    }
+
+}
+
+
+@media  and {
+    
+}
